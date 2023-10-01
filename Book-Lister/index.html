@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookLister</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container mt-4" id="container">
+        <h1 class="display-4 text-center">MyBookLister</h1>
+        <form id="book-form" class="p-3">
+            <div class="form-group">
+                <label for="title" class="text-light">Book Name</label>
+                <input type="text" class="form-control mb-3" id="title">
+            </div>
+            <div class="form-group">
+                <label for="author" class="text-light">Author Name</label>
+                <input type="text" class="form-control mb-3" id="author">
+            </div>
+            <div class="form-group">
+                <label for="isbn" class="text-light">ISBN</label>
+                <input type="text" class="form-control mb-3" id="isbn">
+            </div>
+            <div class="d-grid">
+                <input type="submit" value="add book" class="btn btn-primary mt-5">
+            </div>
+        </form>
+        <table class="table table-striped mt-3">
+            <thead>
+                <tr>
+                    <th class="text-light">Title</th>
+                    <th class="text-light">Author name</th>
+                    <th class="text-light">Isbn</th>
+                    <th>  </th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

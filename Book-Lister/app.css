@@ -1,0 +1,7 @@
+body{
+    background-image: url("peak_background.png");
+    background-size: cover;
+}
+container{
+    background-color: none;
+}
